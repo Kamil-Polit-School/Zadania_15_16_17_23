@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<!-- META -->
+	<meta name="Author" content="Kamil Polit" />
+	<meta charset="UTF-8" />
+</head>
+<body> <textarea rows="100" cols="100">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript">
+    	function render() {
+    		var rysowanie = document.getElementById('surface');
+			var rodzaj = rysowanie.getContext('2d');
+			rodzaj.lineWidth = 10;
+
+			rodzaj.strokeStyle = "red";
+			rodzaj.beginPath();
+			rodzaj.arc(200,50,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+
+			rodzaj.strokeStyle = "green";
+			rodzaj.beginPath();
+			rodzaj.arc(240,50,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+
+			rodzaj.strokeStyle = "blue";
+			rodzaj.beginPath();
+			rodzaj.arc(280,50,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+
+			rodzaj.strokeStyle = "yellow";
+			rodzaj.beginPath();
+			rodzaj.arc(320,50,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+
+			rodzaj.strokeStyle = "purple";
+			rodzaj.beginPath();
+			rodzaj.arc(220,85,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+
+			rodzaj.strokeStyle = "orange";
+			rodzaj.beginPath();
+			rodzaj.arc(260,85,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+
+			rodzaj.strokeStyle = "pink";
+			rodzaj.beginPath();
+			rodzaj.arc(300,85,30,2 * Math.PI,0,false);
+			rodzaj.closePath();
+			rodzaj.lineWidth = 10;
+			rodzaj.stroke();
+    	}
+    </script>
+	<title> Zadanie 16 </title>
+</head>
+<body onload="render();">
+	<canvas id="surface" width="800" height="800"></canvas>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

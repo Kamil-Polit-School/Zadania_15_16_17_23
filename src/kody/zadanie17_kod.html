@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<!-- META -->
+	<meta name="Author" content="Kamil Polit" />
+	<meta charset="UTF-8" />
+</head>
+<body> <textarea rows="100" cols="100">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript">
+    	function render() {
+    		var rysowanie = document.getElementById('surface');
+			var rodzaj = rysowanie.getContext('2d');
+			rodzaj.strokeStyle = "green";
+			rodzaj.lineWidth = 10;
+
+    		rodzaj.beginPath();
+			rodzaj.moveTo(250,250);
+			rodzaj.quadraticCurveTo(200,180, 250,195);
+			rodzaj.quadraticCurveTo(315,180, 250,250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+			rodzaj.beginPath();
+			rodzaj.moveTo(250,250);
+			rodzaj.quadraticCurveTo(200,180, 250,195);
+			rodzaj.quadraticCurveTo(315,180, 250,250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+
+			rodzaj.beginPath();
+			rodzaj.moveTo(250,250);
+			rodzaj.quadraticCurveTo(200,320, 250,305);
+			rodzaj.quadraticCurveTo(315,320, 250,250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+			rodzaj.beginPath();
+			rodzaj.moveTo(250,250);
+			rodzaj.quadraticCurveTo(200,320, 250,305);
+			rodzaj.quadraticCurveTo(315,320, 250,250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+
+			rodzaj.beginPath();
+			rodzaj.moveTo(250, 250);
+			rodzaj.quadraticCurveTo(180, 200, 195, 250);
+			rodzaj.quadraticCurveTo(180, 315, 250, 250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+			rodzaj.beginPath();
+			rodzaj.moveTo(250, 250);
+			rodzaj.quadraticCurveTo(180, 200, 195, 250);
+			rodzaj.quadraticCurveTo(180, 315, 250, 250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+
+			rodzaj.beginPath();
+			rodzaj.moveTo(250, 250);
+			rodzaj.quadraticCurveTo(320, 200, 305, 250);
+			rodzaj.quadraticCurveTo(320, 315, 250, 250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+			rodzaj.beginPath();
+			rodzaj.moveTo(250, 250);
+			rodzaj.quadraticCurveTo(320, 200, 305, 250);
+			rodzaj.quadraticCurveTo(320, 315, 250, 250);
+			rodzaj.closePath();
+			rodzaj.fillStyle = "green";
+			rodzaj.fill();
+			rodzaj.stroke();
+    	}
+    </script>
+	<title> Zadanie 17 </title>
+</head>
+<body onload="render();">
+	<canvas id="surface" width="800" height="800"></canvas>
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
